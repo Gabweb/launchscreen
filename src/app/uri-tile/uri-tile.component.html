@@ -1,0 +1,19 @@
+ <mat-grid-list cols="3" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let uri of uris">
+
+<div style="width: 90%; height: 90%;">
+<mat-card class="tile">
+  <div class="head">
+    {{uri.name}}
+    <span class="icons">
+      <fa name="cog"></fa>
+      <fa name="trash"></fa>
+    </span>
+  </div>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+</mat-card>
+</div>
+
+
+  </mat-grid-tile>
+</mat-grid-list>

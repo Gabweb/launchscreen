@@ -1,0 +1,23 @@
+.head {
+  text-align: left;
+  position: realtive;
+  margin: 20px 0;
+}
+
+.icons {
+  position: absolute;
+  right: 30px;
+}
+
+.mat-card-image {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+mat-card {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
