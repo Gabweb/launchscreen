@@ -8,8 +8,8 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
   styleUrls: ['./uri-dialog.component.css']
 })
 export class UriDialogComponent {
-  private localUri:Uri;
-  private newEle:boolean = true;
+  public localUri:Uri;
+  public newEle:boolean = true;
 
   constructor(public dialogRef: MatDialogRef<UriDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {

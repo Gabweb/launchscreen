@@ -12,7 +12,7 @@ import { Uri } from '../uri'
   styleUrls: ['./uri-tile.component.css']
 })
 export class UriTileComponent implements OnInit {
-  private uris:Uri[] = [];
+  public uris:Uri[] = [];
   constructor(private urisService: UrisService) {
 
   }
