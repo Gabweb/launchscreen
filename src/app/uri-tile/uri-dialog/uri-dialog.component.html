@@ -1,6 +1,16 @@
-<h2 mat-dialog-title>Edit</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
+<h2 mat-dialog-title *ngIf="!newEle">Edit "{{this.localUri.name}}"</h2>
+<h2 mat-dialog-title *ngIf="newEle">Add</h2>
+<div mat-dialog-content>
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" [(ngModel)]="this.localUri.name">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Address" [(ngModel)]="this.localUri.uri">
+    </mat-form-field> 
+</div>
 
-<mat-dialog-actions>
-  <button mat-raised-button mat-dialog-close>Cancle</button>
-</mat-dialog-actions>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data" tabindex="2">Ok</button>
+  <button mat-button (click)="onNoClick()" tabindex="-1">Cancle</button>
+</div>

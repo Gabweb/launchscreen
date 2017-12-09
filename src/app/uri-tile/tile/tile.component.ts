@@ -18,8 +18,7 @@ export class TileComponent implements OnInit {
 
   openDialog(): void {
     let dialogRef = this.dialog.open(UriDialogComponent, {
-      width: '250px',
-      data: { }
+      data: this.uri
     });
 
     dialogRef.afterClosed().subscribe(result => {

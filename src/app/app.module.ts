@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -43,7 +43,8 @@ import { AppComponent } from './app.component';
 import { UriTileComponent } from './uri-tile/uri-tile.component';
 import { UrisService } from './uris.service';
 import { TileComponent } from './uri-tile/tile/tile.component';
-import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component'
+import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component';
+import { AddUriComponent } from './uri-tile/add-uri/add-uri.component'
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component'
     AppComponent,
     UriTileComponent,
     TileComponent,
-    UriDialogComponent
+    UriDialogComponent,
+    AddUriComponent
   ],
   imports: [
     BrowserModule,
@@ -88,6 +90,7 @@ import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component'
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
+    FormsModule,
   ],
   providers: [UrisService],
   entryComponents: [
