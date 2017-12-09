@@ -1,0 +1,22 @@
+<div class="wrapper">
+<div class="box" style.background-color="#{{getBackgroundColor()}}">
+    <div class="head">
+      {{uri.name}}
+      <span class="icons">
+        <button mat-icon-button (click)="openDialog()">
+          <i class="far fa-ellipsis-v fa-lg"></i>
+        </button>
+      </span>
+    </div>
+
+    <a href="{{uri.uri}}"
+      class="imageLink"
+
+    >
+      <div class="imageLinkBg"
+        style.background-image="url({{getBackgroundImg()}})"
+      >
+      </div>
+    </a>
+</div>
+</div>

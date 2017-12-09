@@ -4,6 +4,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: #333;
+  background: rgb(249, 249, 250);;
+
   color: #eee;
+  font-family: 'roboto', verdana, sans-serif;
 }
