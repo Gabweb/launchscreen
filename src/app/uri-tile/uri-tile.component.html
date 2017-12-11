@@ -1,5 +1,14 @@
- <mat-grid-list cols="4" rowHeight="1:1">
-  <mat-grid-tile *ngFor="let uri of uris">
-    <app-tile [uri]="uri"></app-tile>
-  </mat-grid-tile>
-</mat-grid-list>
+<div style="text-align:center">
+  <h1>
+    LaunchScreen
+  </h1>
+  <div style="width: 90%; max-width: 1200px; margin: 0 auto">
+    <mat-grid-list cols="4" rowHeight="1:1">
+       <mat-grid-tile *ngFor="let uri of uris">
+         <app-tile [uri]="uri"></app-tile>
+       </mat-grid-tile>
+     </mat-grid-list>
+  </div>
+</div>
+
+<app-add-uri></app-add-uri>

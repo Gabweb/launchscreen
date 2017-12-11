@@ -4,8 +4,42 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: rgb(249, 249, 250);;
-
+  background: #F4F4F6;
   color: #666;
-  font-family: 'roboto', verdana, sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: #673BB7;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  color: #000;
+  font-size: 50px;
+  line-height: 1;
+  margin: 40px 0;
+  color: #333;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 1);
+}
+
+h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0px 0;
+  line-height: 1;
+  color: #000;
+}
+
+h3 {
+  font-size: 20px;
+  color: #999;
+  margin-top: 15px;
 }

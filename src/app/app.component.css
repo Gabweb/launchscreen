@@ -1,7 +1,10 @@
-h1 {
-  font-family: 'Lora', serif;
-  color: #777;
 
-  font-size: 60px;
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+.content {
+  flex: 1;
 }

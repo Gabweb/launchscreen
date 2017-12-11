@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -44,7 +45,9 @@ import { UriTileComponent } from './uri-tile/uri-tile.component';
 import { UrisService } from './uris.service';
 import { TileComponent } from './uri-tile/tile/tile.component';
 import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component';
-import { AddUriComponent } from './uri-tile/add-uri/add-uri.component'
+import { AddUriComponent } from './uri-tile/add-uri/add-uri.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './shared/footer/footer.component'
 
 
 @NgModule({
@@ -53,7 +56,9 @@ import { AddUriComponent } from './uri-tile/add-uri/add-uri.component'
     UriTileComponent,
     TileComponent,
     UriDialogComponent,
-    AddUriComponent
+    AddUriComponent,
+    LandingPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -91,6 +96,7 @@ import { AddUriComponent } from './uri-tile/add-uri/add-uri.component'
     MatToolbarModule,
     MatTooltipModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [UrisService],
   entryComponents: [
