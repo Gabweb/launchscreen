@@ -13,12 +13,19 @@ import { Uri } from '../uri'
 })
 export class UriTileComponent implements OnInit {
   public uris:Uri[] = [];
+  public rowCount = 4;
+
   constructor(private urisService: UrisService) {
 
   }
 
   ngOnInit() {
     this.uris = this.urisService.getUris();
+    this.getRowCount();
+  }
+
+  getRowCount():void {
+    this.rowCount = Math.min(4, this.uris.length);
   }
 
 }

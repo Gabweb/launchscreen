@@ -1,0 +1,12 @@
+<div class="boxIt">
+
+    <input type="search"
+      (keyup.enter)="keyUp($event)"
+      (focus)="onFocus()"
+      (focusout)="onFocusOut()"
+      placeholder="{{placeholder}}"
+      [(ngModel)]="this.searchString"
+      autofocus>
+    <div class="go" (click)="submitSearch()"><img src="https://duckduckgo.com/assets/logo_header.v107.lg.svg"></div>
+
+</div>

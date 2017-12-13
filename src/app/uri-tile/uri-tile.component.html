@@ -3,7 +3,10 @@
     LaunchScreen
   </h1>
   <div style="width: 90%; max-width: 1200px; margin: 0 auto">
-    <mat-grid-list cols="4" rowHeight="1:1">
+
+    <app-searchbar></app-searchbar>
+
+    <mat-grid-list cols="{{rowCount}}" rowHeight="1:1">
        <mat-grid-tile *ngFor="let uri of uris">
          <app-tile [uri]="uri"></app-tile>
        </mat-grid-tile>

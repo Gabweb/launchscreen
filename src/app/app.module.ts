@@ -47,7 +47,8 @@ import { TileComponent } from './uri-tile/tile/tile.component';
 import { UriDialogComponent } from './uri-tile/uri-dialog/uri-dialog.component';
 import { AddUriComponent } from './uri-tile/add-uri/add-uri.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { FooterComponent } from './shared/footer/footer.component'
+import { FooterComponent } from './shared/footer/footer.component';
+import { SearchbarComponent } from './searchbar/searchbar.component'
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { FooterComponent } from './shared/footer/footer.component'
     UriDialogComponent,
     AddUriComponent,
     LandingPageComponent,
-    FooterComponent
+    FooterComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
