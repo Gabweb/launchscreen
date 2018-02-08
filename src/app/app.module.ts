@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -65,7 +64,6 @@ import { SearchbarComponent } from './searchbar/searchbar.component'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
