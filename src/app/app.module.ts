@@ -48,6 +48,7 @@ import { AddUriComponent } from './uri-tile/add-uri/add-uri.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SearchbarComponent } from './searchbar/searchbar.component'
+import { DiagonalBackgroundComponent } from './shared/diagonal-background/diagonal-background.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { SearchbarComponent } from './searchbar/searchbar.component'
     AddUriComponent,
     LandingPageComponent,
     FooterComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    DiagonalBackgroundComponent
   ],
   imports: [
     BrowserModule,
