@@ -30,7 +30,7 @@ export class SearchbarComponent implements OnInit {
   }
 
   submitSearch() {
-    window.location.href = encodeURI(`https://duckduckgo.com/?q=${this.searchString}`);
+    window.location.href = 'https://duckduckgo.com/?q=' + encodeURIComponent(this.searchString);
   }
 
 }
