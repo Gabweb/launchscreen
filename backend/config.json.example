@@ -1,0 +1,17 @@
+{
+  "launchscreen":{
+    "debug": true
+  },
+  "OAuth": {
+    "GitHub": {
+      "ID": "..",
+      "Secret": "..",
+      "callbackURL": ".."
+    }
+  },
+  "auth": {
+    "JWT": {
+      "secret": "12345"
+    }
+  }
+}

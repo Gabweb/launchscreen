@@ -1,0 +1,30 @@
+{
+  "name": "launchscreen-server",
+  "private": true,
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc && cp ./config.json ./dist/config.json",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^4.6.6",
+    "@nestjs/core": "^4.6.6",
+    "@nestjs/testing": "^4.6.6",
+    "jsonwebtoken": "^8.2.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.8",
+    "superagent": "^3.8.2",
+    "typescript": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^7.2.6",
+    "@types/node": "^9.6.2",
+    "@types/superagent": "^3.5.7",
+    "nodemon": "^1.17.3",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1"
+  }
+}

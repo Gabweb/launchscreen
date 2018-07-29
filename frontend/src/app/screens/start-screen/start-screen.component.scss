@@ -1,0 +1,49 @@
+@import '../../../global';
+
+.headings {
+  margin-top: 100px;
+
+  h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    font-size: calc(1vw + 80px); // sass-lint:disable-line no-duplicate-properties
+    line-height: 1;
+    margin: 20px 0;
+    color: $h1-home-color;
+    text-shadow: $h1-text-shadow-home;
+  }
+
+  h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0;
+    line-height: 1;
+    color: $inverted-color;
+  }
+}
+
+button {
+  padding: 5px 20px;
+  font-size: 17px;
+}
+
+.get-started {
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media all and (max-width: 1100px) {
+  h1 {
+    font-size: calc(3vw + 60px);
+  }
+}
+
+@media all and (max-width: 499px) {
+  h1 {
+    font-size: calc(15vw);
+  }
+}

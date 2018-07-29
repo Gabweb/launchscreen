@@ -1,0 +1,13 @@
+<h2 *ngIf="!newEle">Edit "{{ tileData.name }}"</h2>
+<h2 *ngIf="newEle">Add</h2>
+
+<input class="uk-input uk-margin-small" placeholder="Name" [(ngModel)]="tileData.name">
+<input class="uk-input uk-margin-small" placeholder="Address" [(ngModel)]="tileData.uri">
+<input class="uk-input uk-margin-small" placeholder="Image-URL" [(ngModel)]="tileData.image">
+<input class="uk-input uk-margin-small" placeholder="Color" [(ngModel)]="tileData.color">
+
+<div>
+  <button class="uk-button uk-button-default uk-button-primary" (click)="onOkClick()">Ok</button>
+  <button class="uk-button uk-button-default uk-button-secondary" (click)="onNoClick()">Cancle</button>
+  <button class="uk-button uk-button-default uk-button-danger" (click)="onDeleteClick()" *ngIf="!newEle">Delete</button>
+</div>

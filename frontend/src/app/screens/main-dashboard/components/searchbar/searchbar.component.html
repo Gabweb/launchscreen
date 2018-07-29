@@ -1,0 +1,13 @@
+<div class="searchbox uk-box-shadow-small">
+  <div class="search-input">
+    <div class="search-symbol" [class.search-symbol-hidden]="this.searchString.length !== 0">
+      <fa-icon [icon]="['far', 'search']"></fa-icon>
+    </div>
+    <input type="search" (keyup.enter)="keyUp($event)" [(ngModel)]="this.searchString">
+  </div>
+
+  <div class="search-submit" (click)="submitSearch()">
+    <img src="https://duckduckgo.com/assets/logo_header.v107.lg.svg">
+  </div>
+
+</div>

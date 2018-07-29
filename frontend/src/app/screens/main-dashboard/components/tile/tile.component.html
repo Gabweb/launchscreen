@@ -1,0 +1,19 @@
+<div class="head">
+  <span class="uk-drag">{{ tile.name }}</span>
+  <span class="icons ">
+    <a (click)="openDialog()">
+      <fa-icon [icon]="['far', 'ellipsis-v']" size="lg"></fa-icon>
+    </a>
+  </span>
+</div>
+
+<div class="media-box" style.background-color="#{{getBackgroundColor()}}">
+  <a href="{{tile.uri}}" class="image-link">
+    <div class="image-background"
+      style.background-image="url({{getBackgroundImg()}})"
+    >
+    </div>
+  </a>
+</div>
+
+

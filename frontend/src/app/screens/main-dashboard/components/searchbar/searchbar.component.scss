@@ -1,0 +1,54 @@
+@import '../../../../../global';
+
+:host {
+  display: inline-block;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: $box-background;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-symbol {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 120%;
+}
+
+.search-symbol-hidden {
+  display: none;
+}
+
+input {
+  padding: 10px 15px;
+  border: 0;
+  width: 25vw;
+  max-width: 350px;
+  min-width: 250px;
+  color: $default-color;
+  font-size: 17px;
+  height: 100%;
+}
+
+.search-submit {
+  height: 100%;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

@@ -1,0 +1,48 @@
+// Overall settings
+$main-color: #673BB7;
+$main-lighter-color: #8948c4;
+
+$background-color: #F4F4F6;
+$box-background: #fff;
+
+$default-color: #666;
+$inverted-color: #fff;
+$a-color: $main-color;
+$h1-color: #000;
+$h1-home-color: #fff;
+$h2-color: $h1-color;
+$h3-color: $h1-color;
+
+$h1-text-shadow: 2px 2px 0 rgba(255, 255, 255, 1);
+$h1-text-shadow-home: 2px 2px 0 rgba(0, 0, 0, .5);
+$box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+$border: 1px solid #ccc;
+
+// ::placeholder
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+    }
+  }
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::placeholder') {
+    @content;
+  }
+}

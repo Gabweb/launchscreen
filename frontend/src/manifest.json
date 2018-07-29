@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "LaunchScreen",
+  "short_name": "LaunchScreen",
+  "version": "0.1",
+  "description": "TODO",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "homepage": "index.html?page=login"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html?page=login"
+  }
+}

@@ -1,0 +1,11 @@
+options:
+  formatter: stylish
+files:
+  include: '**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*'
+    - '**/*.nolint.s+(a|c)ss'
+rules:
+  property-sort-order: 0
+  hex-notation: 0
+  no-transition-all: 0

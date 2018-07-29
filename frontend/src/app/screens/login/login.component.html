@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="grid uk-position-center">
+  <div class="uk-grid-match uk-child-width-1-2@s" uk-grid>
+    <div>
+      <div class="uk-card uk-card-body uk-card-default">
+        <h3>Sync</h3>
+        <p>Create an account and sync your settings across devices.</p>
+        <app-login-buttons ($clicked)="onLoginClick($event)"></app-login-buttons>
+        <button class="uk-button uk-button-primary" disabled>Coming soon!</button>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-body uk-card-default">
+        <h3>Local</h3>
+        <p>Use LaunchScreen only on this device.</p>
+        <button class="uk-button uk-button-primary" (click)="onLocalClick()">
+          Local
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
