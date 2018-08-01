@@ -12,10 +12,10 @@ export class EditTileFormComponent {
   tileData: TileData = new TileData();
   _originalTileData: TileData;
 
-  @Output('tileChanged') tileChanged = new EventEmitter<TileDataChange>();
-  @Output('tileDeleted') tileDeleted = new EventEmitter<TileData>();
+  @Output() tileChanged = new EventEmitter<TileDataChange>();
+  @Output() tileDeleted = new EventEmitter<TileData>();
 
-  @Output('closeDialog') closeDialog = new EventEmitter<null>();
+  @Output() closeDialog = new EventEmitter<null>();
 
   @Input('tileData')
   set originalTileData(value: TileData) {
