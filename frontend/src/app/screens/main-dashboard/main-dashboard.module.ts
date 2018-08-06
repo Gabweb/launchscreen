@@ -11,7 +11,9 @@ import { FormsModule } from '../../../../node_modules/@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEllipsisV, faPlusCircle, faSearch } from '@fortawesome/pro-regular-svg-icons';
+import { faEllipsisV } from '@fortawesome/pro-regular-svg-icons/faEllipsisV';
+import { faPlusCircle } from '@fortawesome/pro-regular-svg-icons/faPlusCircle';
+import { faSearch } from '@fortawesome/pro-regular-svg-icons/faSearch';
 
 library.add(faEllipsisV);
 library.add(faSearch);

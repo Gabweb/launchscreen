@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGripHorizontal } from '@fortawesome/pro-solid-svg-icons';
+import { faGripHorizontal } from '@fortawesome/pro-solid-svg-icons/faGripHorizontal';
 
 library.add(faGripHorizontal);
 

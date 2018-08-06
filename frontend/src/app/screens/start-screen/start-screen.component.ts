@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faGripHorizontal } from '@fortawesome/pro-solid-svg-icons';
+import { faGripHorizontal } from '@fortawesome/pro-solid-svg-icons/faGripHorizontal';
 
 @Component({
   selector: 'app-start-screen',
