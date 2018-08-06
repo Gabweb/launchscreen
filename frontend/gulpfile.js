@@ -1,7 +1,13 @@
 var gulp = require( 'gulp' );
 var ftp = require('vinyl-ftp');
 var minimist = require('minimist');
+var googleWebFonts = require('gulp-google-webfonts');
+
 var args = minimist(process.argv.slice(2));
+
+/*
+* FTP Deploy
+*/
 
 gulp.task('deploy', function() {
   if (args.branch == 'master') {
@@ -20,5 +26,21 @@ gulp.task('deploy', function() {
   } else {
     console.log('Skipping deploy...');
   }
+});
 
+/*
+* Local Fonts
+*/
+
+var options = {
+  fontsDir: '',
+  cssDir: '',
+  cssFilename: 'fonts.css'
+};
+
+gulp.task('fonts', function () {
+  return gulp.src('./fonts.list')
+    .pipe(googleWebFonts(options))
+    .pipe(gulp.dest('./src/assets/fonts'))
+    ;
 });
