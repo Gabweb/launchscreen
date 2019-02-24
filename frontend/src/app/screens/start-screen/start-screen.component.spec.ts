@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StartScreenComponent } from './start-screen.component';
+import { DiagonalBackgroundComponent } from './components/diagonal-background/diagonal-background.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 describe('StartScreenComponent', () => {
   let component: StartScreenComponent;
@@ -8,7 +10,13 @@ describe('StartScreenComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StartScreenComponent ]
+      declarations: [
+        StartScreenComponent,
+        DiagonalBackgroundComponent,
+      ],
+      imports: [
+        FontAwesomeModule,
+      ]
     })
     .compileComponents();
   }));

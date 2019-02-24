@@ -1,10 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GridComponent } from './grid.component';
-import { ComponentsModule } from '../components.module';
-import { TileComponent } from '../tile/tile.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { CommonsModule } from '../../commons/commons.module';
+import { SharedModule } from '@shared/shared.module';
 
 describe('GridComponent', () => {
   let component: GridComponent;
@@ -14,7 +12,7 @@ describe('GridComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ GridComponent ],
       schemas: [ NO_ERRORS_SCHEMA ],
-      imports: [CommonsModule]
+      imports: [ SharedModule ]
     })
     .compileComponents();
   }));

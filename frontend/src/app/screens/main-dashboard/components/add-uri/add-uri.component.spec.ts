@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddUriComponent } from './add-uri.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { CommonsModule } from '../../commons/commons.module';
+import { SharedModule } from '@shared/shared.module';
 
 describe('AddUriComponent', () => {
   let component: AddUriComponent;
@@ -12,7 +12,7 @@ describe('AddUriComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ AddUriComponent ],
       schemas: [ NO_ERRORS_SCHEMA ],
-      imports: [CommonsModule]
+      imports: [ SharedModule ]
     })
     .compileComponents();
   }));
