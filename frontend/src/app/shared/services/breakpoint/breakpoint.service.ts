@@ -57,30 +57,22 @@ export class BreakpointService {
     return DeviceClass.Desktop;
   }
 
+  private createListener(matchingSubject: Subject<any>, otherSubject: Subject<any>) {
+    return function(this: MediaQueryList) {
+      if (this.matches) {
+        matchingSubject.next();
+      } else {
+        otherSubject.next();
+      }
+    }
+  }
+
   private subscribeToMediaMatcher(mediaMatcher: MediaMatcher) {
     const mediaQueryList = mediaMatcher.matchMedia(SMARTPHONE);
-    mediaQueryList.addListener((mediaQuery: MediaQueryList) => {
-      if (mediaQuery.matches) {
-        this._mobile.next();
-      } else {
-        this._tablet.next();
-      }
-    });
-    const mediaQueryList3 = mediaMatcher.matchMedia(TABLET);
-    mediaQueryList3.addListener((mediaQuery: MediaQueryList) => {
-      if (mediaQuery.matches) {
-        this._tablet.next();
-      } else {
-        this._laptop.next();
-      }
-    });
-    const mediaQueryList4 = mediaMatcher.matchMedia(LAPTOP);
-    mediaQueryList4.addListener((mediaQuery: MediaQueryList) => {
-      if (mediaQuery.matches) {
-        this._laptop.next();
-      } else {
-        this._desktop.next();
-      }
-    });
+    mediaQueryList.addListener(this.createListener(this._mobile, this._tablet));
+    const mediaQueryList2 = mediaMatcher.matchMedia(TABLET);
+    mediaQueryList2.addListener(this.createListener(this._tablet, this._laptop));
+    const mediaQueryList3 = mediaMatcher.matchMedia(LAPTOP);
+    mediaQueryList3.addListener(this.createListener(this._laptop, this._desktop));
   }
 }

@@ -2,7 +2,8 @@
 	font-family: 'Kaushan Script';
 	font-style: normal;
 	font-weight: 400;
-	src: url(Kaushan_Script-normal-400.woff) format('woff');
+	font-display: auto;
+	src: local('Kaushan Script'), local('KaushanScript-Regular'), url(Kaushan_Script-normal-400.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
@@ -10,7 +11,8 @@
 	font-family: 'Roboto Slab';
 	font-style: normal;
 	font-weight: 400;
-	src: url(Roboto_Slab-normal-400.woff) format('woff');
+	font-display: auto;
+	src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(Roboto_Slab-normal-400.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
@@ -18,7 +20,8 @@
 	font-family: 'Roboto Slab';
 	font-style: normal;
 	font-weight: 700;
-	src: url(Roboto_Slab-normal-700.woff) format('woff');
+	font-display: auto;
+	src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(Roboto_Slab-normal-700.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
